@@ -11,7 +11,7 @@ import java.util.Collection;
 /**
  * @author Victor Hugo Olvera Cruz
  */
-@FeignClient(name="UserService", url = "http://localhost:8080/studyrest/users")
+@FeignClient(name="UserService", url = "${feign.user}")
 public interface UserLocalService {
 
     //Find by id
