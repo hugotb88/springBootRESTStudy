@@ -35,7 +35,7 @@ public class UserFeignService {
 
     public ArrayList<User> getAllMatchesByFirstName(String firstName){
         System.out.println("Get all the Users that matches with the firstName");
-        ArrayList<User> listResult = userDaoImpl.allUsersByFirstName("Victor");
+        ArrayList<User> listResult = userDaoImpl.allUsersByFirstName(firstName);
         return listResult;
     }
 
